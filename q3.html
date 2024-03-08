@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="form.js"></script>
+    <title>Job Form</title>
+    <style>
+        .space{
+            height: 4vw;
+        }
+        .spacebwtags{
+          
+            margin-right: 2vw;
+        }
+    </style>
+</head>
+<body>
+    
+    <form id="appli">
+    <div class="space"></div>
+    <h1 style="text-align: center;">MY WEB FORM</h1>
+    <div class="space"></div>
+        <fieldset>
+           <legend>Personal Information:</legend> 
+           <label for="fname">First Name:</label>
+           <input type="text" name="First Name" id="fn" value="Mary" class="spacebwtags">
+
+           <label for="lname">Last Name: <input type="text" id="ln" name="Last Name" value="Nad"></label>
+           
+           <br><div style="height: 10px;"></div>
+
+           <label for="phno">Phone Number:</label>
+           <input type="text" name="Phone Number" id="pn" value="0203920078" class="spacebwtags">
+           <label for="lname">Email</label>
+           <input type="text" id="em" name="Last Name" value="maryamnad4@gmail.com">
+
+           <br><div style="height: 10px;"></div>  
+
+           <label for="hno">House no: </label>
+           <input type="text" id="hno" name="House no" value="24" class="spacebwtags" >
+           <label for="stno">Street no: </label>
+           <input type="text" id="stno" name="Street no" value="2"  class="spacebwtags">
+           <label for="city">City:</label>
+           <input type="text" id="city" name="City" value="Lahore"  class="spacebwtags">
+           <label for="state">State: </label>
+           <input type="text" id="state" name="State" value="Punjab" class="spacebwtags">
+           <label for="zip">Zip Code: <input type="text" id="zip" name="Zip Code" value="3033" class="spacebwtags"> </label>
+           
+
+        </fieldset>
+
+        <div class="space"></div>
+
+        <fieldset>
+            <legend>Resume and Cover Letter:</legend> 
+            <label for="resume">Upload Resume: </label>
+            <input type="file" id="cv" name="resume" >
+
+            <br><div style="height: 10px;"></div>  
+
+            <label for="coverletter">Write Cover Letter: </label><br>
+            <textarea id="cl" name="coverletter" ></textarea>
+
+        </fieldset>
+
+    
+        <div class="space"></div>
+        
+        <fieldset>
+            <legend>Education:</legend> 
+            <label for="education">Highest Level of Education Attained:</label>
+            <select id="hedu" name="education">
+                <option value="none">Select</option>
+                <option value="primary">Primary School</option>
+                <option value="secondary">Secondary School</option>
+                <option value="highschool">High School</option>
+                <option value="diploma">Diploma</option>
+                <option value="bachelor">Bachelor's Degree</option>
+                <option value="master">Master's Degree</option>
+                <option value="phd">Ph.D. or Higher</option>
+            </select>
+
+            <br><div style="height: 10px;"></div>  
+
+            <label for="school">Name of School: </label>
+            <input type="text" id="school" name="Name of School" value="Mary">
+
+            <br><div style="height: 10px;"></div> 
+
+            <label for="Major">Major: </label>
+            <input type="text" id="major" name="Major" value="Mary">
+
+            <br><div style="height: 10px;"></div> 
+
+            <label for="year">Graduation Year: </label>
+            <input type="text" id="year" name="Graduation Year" value="2000">
+
+            <br><div style="height: 10px;"></div> 
+
+            <label for="history">Employment History: </label><br> 
+            <textarea id="ehis" name="Employment History" >today is history</textarea>
+
+        </fieldset>
+
+        <div class="space"></div>
+
+        <fieldset>
+            <legend>Previous Job Title</legend>
+            <label for="company">Company Name: </label>
+            <input type="text" id="company" name="Company Name" value="jobless">
+
+            <br><div style="height: 10px;"></div> 
+
+            <label for="employment">Employment Dates: </label><br>
+            <textarea id="edate" name="Employment Date" > no job no money</textarea>
+
+            <br><div style="height: 10px;"></div> 
+
+            <label for="responsibilities">Responsibilities: </label>
+            <input type="text" id="responsibilities" name="Responsibilities" value="Manager"><br>
+        </fieldset>
+        <div class="space"></div>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Relevant Skills: </label>
+            <input type="text" id="skills" name="Skills" value="Mary">
+            
+            <br><div style="height: 10px;"></div> 
+
+            <label for="certifications">Certifications: </label>
+            <input type="file" id="cert" name="certifications" >
+
+
+        </fieldset>
+
+        <div class="space"></div>
+
+        <fieldset>
+            <legend>Availability</legend>
+            <label for="date">Start Date: </label>
+            <input type="date" id="date" name="Dates" value="some dataForm" >
+
+            <br><div style="height: 10px;"></div> 
+
+            <label for="schedule">Preffered Working Schedule: </label>
+            <input type="text" id="schedule" name="Preffered Working Schedule" value="Mary">
+
+            <br><div style="height: 10px;"></div> 
+
+            <label for="relocate">Are you willing to relocate? </label>
+            <input type="radio" name="Are you willing to relocate?" id="yes" >
+            <label for="yes">Yes</label>
+            <input type="radio" name="Relocate" id="no">
+            <label for="no">No</label>   
+        </fieldset>
+
+        <div class="space"></div>
+    
+        <fieldset>
+            <legend>References: </legend>
+            <label for="refname">Reference Name: </label>
+            <input type="text" name="Reference Name" id="refname" value="Mary">
+
+            <br><div style="height: 10px;"></div> 
+
+            <label for="refcontact">Reference Contact No: </label>
+            <input type="text" name="Reference Contact" id="refcontact" value="676778787">
+
+            <br><div style="height: 10px;"></div> 
+
+            <label for="relationship">Relationship to Reference: </label>
+            <input type="text" name="Reference to Relationship" id="relationship" value="Mary">
+
+        </fieldset>
+
+        <div class="space"></div>
+
+        <fieldset>
+            <legend>Additional Questions</legend>
+            <label for="Questions">Why do you want to work for this company? </label><br>
+            <textarea name="questions" id="Questions" >existential crisis</textarea>
+        </fieldset>
+
+        <div class="space"></div>
+        
+
+        <fieldset>
+            <legend>Terms and Conditions</legend>
+            <label for="terms">Do you accept all terms and conditions?</label>
+            <input type="checkbox" name="Do you accept Terms?" id="terms">
+
+            <br><div style="height: 10px;"></div> 
+
+
+            <label for="agree">Privacy Policy</label>
+            <input type="checkbox" name="Terms" id="privacy">
+            
+        
+        </fieldset>
+
+        <br><div style="height: 10px;"></div> 
+        
+        <button type ="button" id="view" onclick="nodeChanger()">View Form</button>
+    </form> 
+    <div style="height: 100px;"></div> 
+    <!--<input type="submit" value="Submit" id="subm" > <th>SR NO</th>-->
+    <table id="modifiable" border="1" style="border-collapse: collapse; padding: 5vw ">
+        <thead>
+            <tr>
+               
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone no</th>
+                <th>Email</th>                
+                <th>City </th>
+                <th>Cover letter</th>
+                <th>Major</th>
+                <th>Graduation Year</th>
+
+             <!--  <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>--> 
+
+
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <div style="height: 100px;"></div> 
+<script>
+
+</script>
+
+</body>
+</html>
